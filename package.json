@@ -3,11 +3,17 @@
   "description": "Portfolio of Abu Said",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seymagocmez.github.io/seymagocmez.github.io",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+   
+      "deploy": "next build && next export -o out && git add . && git commit -m 'Deploy' && git subtree push --prefix out origin main"
+    
+    
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
@@ -26,6 +32,7 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "gh-pages": "^6.1.1",
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"
