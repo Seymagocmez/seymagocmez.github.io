@@ -3,7 +3,7 @@
   "description": "Portfolio of Abu Said",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Seymagocmez.github.io/Seymagocmez.github.io",
+  "homepage": "https://seymagocmez.github.io/seymagocmez.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
