@@ -9,8 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "predeploy": "npm run build",
-     "deploy": "next build && next export -o out && main -d out -b main -t true"
+    "predeploy": "npm run build",
+    "deploy": "next build && next export -o out && gh-pages -d out -b main"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
