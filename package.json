@@ -1,18 +1,14 @@
 {
-  "name": "developer-portfolio",
+  "name": "seymagocmez.github.io",
   "description": "Portfolio of Abu Said",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/repo-name",
-
-  
+  "homepage": "https://Seymagocmez.github.io/Seymagocmez.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-   
-
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
