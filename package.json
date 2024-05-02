@@ -1,6 +1,6 @@
 {
   "name": "seymagocmez.github.io",
-  "description": "Portfolio of Abu Said",
+  "description": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://seymagocmez.github.io/seymagocmez.github.io",
@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export -o out && gh-pages/root -d out -b gh-pages/root"
+     "predeploy": "npm run build",
+     "deploy": "next build && next export -o out && main -d out -b main -t true"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
