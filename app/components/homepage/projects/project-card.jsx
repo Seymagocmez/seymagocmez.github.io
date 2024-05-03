@@ -1,9 +1,9 @@
-// @flow strict
-
 import * as React from 'react';
+import Image from 'next/image';
+import apple from '/public/image/apple.jpg';
+import ayla from '/public/image/ayla.jpg';
 
 function ProjectCard({ project }) {
-
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
@@ -34,21 +34,19 @@ function ProjectCard({ project }) {
             <span className="text-amber-300">{project.name}</span>
             <span className="text-gray-400">{`',`}</span>
           </div>
-
+          <div>
+            <span className="ml-4 lg:ml-8 mr-2 text-white">image:</span>
+            <Image src={`/image/${ayla}`} width={300} height={200} alt={project.name} />
+          </div>
           <div className="ml-4 lg:ml-8 mr-2">
             <span className=" text-white">tools:</span>
             <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
+            {project.tools.map((tag, i) => (
+              <React.Fragment key={i}>
+                <span className="text-amber-300">{tag}</span>
+                {project.tools.length - 1 !== i && <span className="text-gray-400">{`', '`}</span>}
+              </React.Fragment>
+            ))}
             <span className="text-gray-400">{"],"}</span>
           </div>
           <div>

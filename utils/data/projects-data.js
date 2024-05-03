@@ -2,6 +2,7 @@ import ayla from '/public/image/ayla.jpg';
 import crefin from '/public/image/crefin.jpg';
 import realEstate from '/public/image/real-estate.jpg';
 import travel from '/public/image/travel.jpg';
+import apple from '/public/image/apple.jpg';
 
 export const projectsData = [
     {
@@ -12,7 +13,7 @@ export const projectsData = [
         role: 'Mobile Developer',
         code: '',
         demo: '',
-        image: crefin,
+        image: apple,
     },
     {
         id: 2,
@@ -24,26 +25,6 @@ export const projectsData = [
         demo: '',
         image: travel,
     },
-    {
-        id: 3,
-        name: '',
-        description: '',
-        tools: [],
-        code: '',
-        role: '',
-        demo: '',
-        image: realEstate,
-    },
-    {
-            id: 4,
-            name: '',
-            description: '',
-            tools: [],
-            code: '',
-            role: '',
-            demo: '',
-            image: realEstate,
-        },
 
 ];
 
